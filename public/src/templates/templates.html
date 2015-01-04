@@ -1,9 +1,9 @@
 
 <script type="text/template" id="articleTemplate">
   <div class="row">
-    <img class="article-thumbnail pull-left" data-src="holder.js/50x50" alt="<%- obj.headline %>">      
+    <img class="article-thumbnail pull-left" src="<%- obj.thumb %>" alt="<%- obj.headline %>">      
     <h3 class="article-headline col-xs-10">
-      <a class="article-link" href="/article/<%- obj.id %>"><%- obj.headline %></a>
+      <a class="article-link" href="/article/<%- obj.thumb %>"><%- obj.headline %></a>
     </h3>
     <div class='clear-fix'></div>
   </div>

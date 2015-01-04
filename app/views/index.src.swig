@@ -33,7 +33,6 @@
     </script>
     <!-- build:js /public/dist/js/bundle.js -->
     <script type="text/javascript" src="/public/build/js/build.js"></script>
-    <script src="/public/bower_components/holderjs/holder.js"></script>
     <script type="text/javascript" src="/public/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbuild -->
 

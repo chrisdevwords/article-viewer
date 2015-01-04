@@ -40,7 +40,8 @@ module.exports = {
             headline : this.generateRandomHeadline(),
             summary : this.generateRandomSummary(),
             dateString : moment(date).format('MMM DD YYYY H:MM a'),
-            tags : tags
+            tags : tags,
+            thumb : [process.env.IMG_PATH || '/public/img/', index%10, '.jpg'].join('')
         };
     
     },
