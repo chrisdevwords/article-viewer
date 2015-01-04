@@ -1,0 +1,45 @@
+
+<script type="text/template" id="articleTemplate">
+  <div class="row">
+    <img class="article-thumbnail pull-left" data-src="holder.js/50x50" alt="<%- obj.headline %>">      
+    <h3 class="article-headline col-xs-10">
+      <a class="article-link" href="/article/<%- obj.id %>"><%- obj.headline %></a>
+    </h3>
+    <div class='clear-fix'></div>
+  </div>
+  <p class='article-date'><%- obj.dateString %></p>
+  <p class='article-summary'><%- obj.summary %></p>
+  <ul class='article-tags'>
+  <% for (var i = 0; i < obj.tags.length; i++) { %>
+    <li class="label label-primary">
+      <a href="/<%- obj.tags[i] %>" class="article-tag">#<%- obj.tags[i] %></a>
+    </li>
+  <% } %>
+  </ul>
+</script>
+
+<script type="text/template" id="navTemplate">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h2 class='tag-nav-header'><%- obj.title %></h2>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      <% for (var i = 0; i < obj.tags.length; i++) { %>
+        <% if (obj.tags[i] != obj.currentTag) { %>
+        <li><a class="article-tag" href="/<%- obj.tags[i] %>">#<%- obj.tags[i] %></a></li>
+        <% } %>
+      <% } %>
+      <% if (obj.currentTag) { %>
+        <li><a class="article-tag" href="/">show all</a></li>
+      <% } %>
+      </ul>
+    </div>
+  </div>
+</script>

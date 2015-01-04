@@ -1,0 +1,62 @@
+{
+  "name": "247dunks",
+  "version": "1.0.0",
+  "description": "Simple article viewer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "foreman start web",
+    "env": "env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisdevwords/247dunks.git"
+  },
+  "keywords": [
+    "dunks",
+    "dunk",
+    "basketball",
+    "gifs",
+    "gif",
+    "heroku",
+    "node"
+  ],
+  "author": "Chris Edwards",
+  "license": "Artistic-2.0",
+  "bugs": {
+    "url": "https://github.com/chrisdevwords/247dunks/issues"
+  },
+  "homepage": "https://github.com/chrisdevwords/247dunks",
+  "browserify": {
+    "transform": [
+      "browserify-compile-templates"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.10.6",
+    "lorem-ipsum": "^1.0.1",
+    "moment": "^2.8.4",
+    "morgan": "^1.5.0",
+    "serve-favicon": "^2.2.0",
+    "swig": "^1.4.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "backbone": "^1.1.2",
+    "bower": "^1.3.12",
+    "browserify": "^8.0.2",
+    "browserify-compile-templates": "^0.1.3",
+    "gulp": "^3.8.10",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-rimraf": "^0.1.1",
+    "gulp-sass": "^1.2.4",
+    "gulp-uglify": "^1.0.2",
+    "gulp-usemin": "^0.3.8",
+    "jquery": "^2.1.3",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}

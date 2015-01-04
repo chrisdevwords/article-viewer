@@ -1,0 +1,73 @@
+@import 'mixins';
+
+$blue: #337ab7;
+
+body {
+}
+
+.tag-nav-header {
+    color: #333;
+    font-size: 1em;
+    margin-top: 1.25em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.article {
+    cursor: pointer;
+    margin-bottom: 2em;
+    &.tapped {
+        background-color: rgba(0, 100, 255 , .3);
+    }
+}
+
+.article:active {
+  @include box-shadow(0, 0, 8px, $blue, true);
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        min-height: 150px;
+    }
+    .article-summary {
+        height: 80px;
+        overflow: hidden;
+    }
+}
+
+
+.article-summary {
+    display: inline-block;
+}
+
+.article-thumbnail {
+    width: 50px;
+    height: 50px;
+    margin: 3px 0 0 3px;
+}
+
+.article-headline {
+    margin-top: 0;
+    height: 54px;
+    overflow: hidden;
+}
+
+.article-date {
+    color: #999;
+}
+
+.article-tags {
+    padding-left: 0;
+    > li {
+        margin-right: .5em;
+    }
+}
+
+a.article-tag {
+    color: #fff;
+}
+
+
+
+
+
